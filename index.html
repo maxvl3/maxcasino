@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Casino</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Max Casino</h1>
+        <h2><span id="groeten"></span> <span id="naamform"></span>, spin en maak kans op mooie geldprijzen!</h2>
+    </header>
+
+    <div id="controlemelding">
+        <form>
+            <label>Naam:</label>
+            <input type="text" id="naam" name="naam" placeholder="Je naam..">
+        
+            <label>Leeftijd:</label>
+            <input type="number" id="leeftijd" name="leeftijd" placeholder="Je leeftijd..">
+        </form>
+        <button id="doorgaanknop">Doorgaan</button>
+        <p id="tejong"></p>
+    </div>
+
+    <img id="controleachtergrond" src="images/controleachtergrond.png" alt="">
+
+    <audio id="prijs2x" src="sound/mario-coin-sound-sound-effect-hd.mp3"></audio> <!-- Bron: https://youtu.be/mQSmVZU5EL4 -->
+    <audio id="jackpot" src="sound/slot-machine-jackpot-sound-effect.mp3"></audio> <!-- Bron: https://youtu.be/g2Qo1_rmgRw -->
+    <audio id="prijs3x" src="sound/winning-sound-effect.mp3"></audio> <!-- Bron: https://youtu.be/bShbq0tGqrQ -->
+
+    <p id="spinscss">Aantal spins: <span id="aantalspins">5</span></p>
+    <p id="portemonneecss">Portemonnee: €<span id="portemonnee">0</span></p>
+
+    <img id="slotmachine" src="images/slotmachine2.png" alt="">
+
+    <div id="getallen">
+        <p id="getal1">?</p>
+        <p id="getal2">?</p>
+        <p id="getal3">?</p>
+    </div>
+
+    <div id="prijzen">
+        <h2>Prijzen:</h2>
+        <p>2 dezelfde getallen = €5</p>
+        <p>3 dezelfde getallen = €15</p>
+        <p>Jackpot (7-7-7) = €30 </p>
+    </div>
+
+    <div id="extraspins">
+        <button id="extra5">5x extra spinnen €5</button>
+        <button id="extra10">10x extra spinnen €10</button>
+    </div>
+
+    <button id="cashout">Cash out</button>
+
+    <div id="spinnen">
+        <button id="spinknop">SPIN</button>
+        <p id="helaas"></p>
+    </div>
+    
+    <img id="cashoutgif" src="images/giphy.gif" alt="">
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
